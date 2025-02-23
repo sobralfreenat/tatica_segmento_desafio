@@ -272,7 +272,15 @@
         return {
           [id]: {
             title: evidencia.segmento,
-            description: evidencia.desafio,
+            description: `
+              Contato Principal: ${evidencia.contatos}
+              Segmento: ${evidencia.segmento}
+              Desafio: ${evidencia.desafio}
+              Município: ${evidencia.municipio}
+              TAM (Brasil): ${evidencia.tam}
+              SAM (Estado): ${evidencia.sam}
+              SOM (Município): ${evidencia.som}
+            `,
             url: `https://b2bleads.com.br/?segmento=${encodeURIComponent(evidencia.segmento)}`,
             category: evidencia.contatos,
           },
